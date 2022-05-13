@@ -27,9 +27,14 @@ function userInput() {
             guessedNumbers.push(userNum)
         }
     }
-    console.log("Hai indovinato un totale di", guessedNumbers.length, "numeri.")
-    console.log("I numeri che hai indovinato sono:", guessedNumbers)
-
+    if (guessedNumbers.length === 0) {
+        alert("Non hai indovinato nessun numero!!!")
+    } else {
+        console.log("Hai indovinato un totale di", guessedNumbers.length, "numeri.")
+        console.log("I numeri che hai indovinato sono:", guessedNumbers)
+        alert("Hai indovinato un totale di", guessedNumbers.length, "numeri.")
+        alert("I numeri che hai indovinato sono:", guessedNumbers)
+    }
 }
 
 
